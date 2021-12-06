@@ -58,7 +58,7 @@ export const initialState = {
 * [X] Within `App.js`, create an event handler connected to the 1 button's `onClick` method.
 * [X] Within your event handler, dispatch the `addOne` action creator.
 * [X] **Test** that your event is correctly connected by pushing the 1 button in the browser. Your total should increase by 1.
-* [ ] **Think** about the path of execution from the clicking of the one button to the rendering of the updated total. What is the order of execution? Within the `Understanding-Question.md` file, write out in your own words the steps of that process.
+* [X] **Think** about the path of execution from the clicking of the one button to the rendering of the updated total. What is the order of execution? Within the `Understanding-Question.md` file, write out in your own words the steps of that process.
 
 
 #### Connect a better premade action.
