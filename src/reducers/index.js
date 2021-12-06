@@ -36,6 +36,12 @@ const reducer = (state, action) => {
                 ...state,
                 operation: action.payload
             });
+
+        case(CLEAR_DISPLAY):
+            return ({
+                ...state,
+                total: 0
+            });
             
         default:
             return state;
