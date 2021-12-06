@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
 import reducer, { initialState } from './../reducers/index';
 import './App.css';
-import { applyNumber, changeOperation, clearDisplay } from '../actions/index';
+import { applyNumber, changeOperation, clearDisplay, addMemory } from '../actions/index';
 
 import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
@@ -10,15 +10,19 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const handleApplyNum = (num) => {
-    dispatch(applyNumber(num))
+    dispatch(applyNumber(num));
   }
 
   const handleChangeOp = (operator) => {
-    dispatch(changeOperation(operator))
+    dispatch(changeOperation(operator));
   }
 
   const handleClear = () => {
-    dispatch(clearDisplay())
+    dispatch(clearDisplay());
+  }
+
+  const handleAddMem = () => {
+    dispatch(addMemory());
   }
 
   return (
@@ -38,7 +42,9 @@ function App() {
             </div>
             
             <div className="row">
-              <CalcButton value={"M+"}/>
+              <CalcButton
+                  onClick={handleAddMem} value={"M+"}/>
+              {/* Or onClick={() => handleAddMem("M+")} value={"M+"}/>*/}
               <CalcButton value={"MR"}/>
               <CalcButton value={"MC"}/>
             </div>
@@ -69,9 +75,9 @@ function App() {
 
             <div className="row ce_button">
               <CalcButton
-                  onClick={() => handleClear("CE")} value={"CE"}/>
+                  onClick={handleClear} value={"CE"}/>
             {/* Could also do it like this
-            onClick={handleClear} value={"CE"}/>*/}
+            onClick={() => handleClear("CE")} value={"CE"}/>*/}
             </div>
 
           </form>
