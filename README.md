@@ -55,9 +55,9 @@ export const initialState = {
 > *Now that we can see our state, let's change allow the user to change it. Let's start with a simple premade action...adding one to our total.*
 * [X] Note the `ADD_ONE` action case (in ./reducer/index.js) and `addOne` action creator (in ./actions/index.js). This action adds 1 to our total.
 * [X] Import the `addOne` action creator into App.js.
-* [ ] Within `App.js`, create an event handler connected to the 1 button's `onClick` method.
-* [ ] Within your event handler, dispatch the `addOne` action creator.
-* [ ] **Test** that your event is correctly connected by pushing the 1 button in the browser. Your total should increase by 1.
+* [X] Within `App.js`, create an event handler connected to the 1 button's `onClick` method.
+* [X] Within your event handler, dispatch the `addOne` action creator.
+* [X] **Test** that your event is correctly connected by pushing the 1 button in the browser. Your total should increase by 1.
 * [ ] **Think** about the path of execution from the clicking of the one button to the rendering of the updated total. What is the order of execution? Within the `Understanding-Question.md` file, write out in your own words the steps of that process.
 
 
