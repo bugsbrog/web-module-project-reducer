@@ -49,7 +49,7 @@ export const initialState = {
     memory: 0
 }
 ```
-* [ ] Check to see that your display correctly reflects the change to your state.
+* [X] Check to see that your display correctly reflects the change to your state.
 
 #### Connect a premade action.
 > *Now that we can see our state, let's change allow the user to change it. Let's start with a simple premade action...adding one to our total.*
