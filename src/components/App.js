@@ -34,7 +34,7 @@ function App() {
             </div>
 
             <div className="row">
-              <CalcButton onClick={() => applyNumber(1)} value={1}/>
+              <CalcButton onClick={() => handleApplyNum(1)} value={1}/>
               <CalcButton value={2}/>
               <CalcButton value={3}/>
             </div>
