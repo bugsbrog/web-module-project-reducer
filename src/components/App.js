@@ -11,6 +11,10 @@ function App() {
   // const handleAdd = (num) => {
   //   dispatch(addOne(num))
   // }
+
+  const handleApplyNum = (num) => {
+    dispatch(applyNumber(num))
+  }
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
