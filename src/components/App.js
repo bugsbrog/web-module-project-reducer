@@ -8,6 +8,7 @@ import CalcButton from './CalcButton';
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
+
   const handleApplyNum = (num) => {
     dispatch(applyNumber(num))
   }
@@ -15,6 +16,11 @@ function App() {
   const handleChangeOp = (operator) => {
     dispatch(changeOperation(operator))
   }
+
+  const handleClear = () => {
+    dispatch(clearDisplay())
+  }
+
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
@@ -62,7 +68,10 @@ function App() {
             </div>
 
             <div className="row ce_button">
-              <CalcButton value={"CE"}/>
+              <CalcButton
+                  onClick={() => handleClear("CE")} value={"CE"}/>
+            {/* Could also do it like this
+            onClick={handleClear} value={"CE"}/>*/}
             </div>
 
           </form>
