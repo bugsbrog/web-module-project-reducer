@@ -78,7 +78,7 @@ export const initialState = {
 * [X] Create an action creator (in `./actions/index.js`) that takes in an operator as an argument and creates an action object with the type `CHANGE_OPERATION.`
 * [X] Import in your new action creator into `App.js.`
 * [X] Create and attach event handlers to the `+`, `-` and `*` buttons that dispatch your new action creator. Make sure you pass in the appropriate operator string in each case.
-* [ ] **Test** that you can successfully change operators and apply numbers in each case.
+* [X] **Test** that you can successfully change operators and apply numbers in each case.
 
 #### Create and connect a reducer case and action creator.
 > *Now let's add in the clear display feature. For this, you will be doing every part of the reducer / action creator process.*
