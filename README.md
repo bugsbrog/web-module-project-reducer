@@ -40,7 +40,7 @@ This simplified calculator adds the entire number selected, rather than adds dig
 * [X] Replace "X" with a reference to `state.operation` within the operation element.
 * [X] Replace "0" with a reference to `state.memory` within the memory element.
 * [X] Replace "0" with a reference to `state.total` when passing a value to our TotalDisplay component.
-* [ ] Check to see that your total, operation and memory display in the UI match your initialState (100, * and 100 respectively)
+* [X] Check to see that your total, operation and memory display in the UI match your initialState (100, * and 100 respectively)
 * [ ] **Test** that you are connected to state by changing the initialState value in your reducer to:
 ```
 export const initialState = {
