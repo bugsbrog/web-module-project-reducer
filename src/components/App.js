@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
 import reducer, { initialState } from './../reducers/index';
 import './App.css';
-import { applyNumber, changeOperation, clearDisplay, addMemory, memoryRecall } from '../actions/index';
+import { applyNumber, changeOperation, clearDisplay, addMemory, memoryRecall, memoryClear } from '../actions/index';
 
 import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
@@ -29,6 +29,10 @@ function App() {
     dispatch(memoryRecall());
   }
 
+  const handleMemClear = () => {
+    dispatch(memoryClear());
+  }
+
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
@@ -48,10 +52,14 @@ function App() {
             <div className="row">
               <CalcButton
                   onClick={handleAddMem} value={"M+"}/>
+
               {/* Or onClick={() => handleAddMem("M+")} value={"M+"}/>*/}
               <CalcButton onClick={handleRecallMem} value={"MR"}/>
+
               {/* {/* Or onClick={() => handleRecallMem("MR")} value={"MR"}/>*/}
-              <CalcButton value={"MC"}/>
+              <CalcButton onClick={handleMemClear} value={"MC"}/>
+
+              {/* {/* Or onClick={() => handleMemClear("MC")} value={"MC"}/>*/}
             </div>
 
             <div className="row">
@@ -81,6 +89,7 @@ function App() {
             <div className="row ce_button">
               <CalcButton
                   onClick={handleClear} value={"CE"}/>
+
             {/* Could also do it like this
             onClick={() => handleClear("CE")} value={"CE"}/>*/}
             </div>
