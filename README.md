@@ -53,8 +53,8 @@ export const initialState = {
 
 #### Connect a premade action.
 > *Now that we can see our state, let's change allow the user to change it. Let's start with a simple premade action...adding one to our total.*
-* [ ] Note the `ADD_ONE` action case (in ./reducer/index.js) and `addOne` action creator (in ./actions/index.js). This action adds 1 to our total.
-* [ ] Import the `addOne` action creator into App.js.
+* [X] Note the `ADD_ONE` action case (in ./reducer/index.js) and `addOne` action creator (in ./actions/index.js). This action adds 1 to our total.
+* [X] Import the `addOne` action creator into App.js.
 * [ ] Within `App.js`, create an event handler connected to the 1 button's `onClick` method.
 * [ ] Within your event handler, dispatch the `addOne` action creator.
 * [ ] **Test** that your event is correctly connected by pushing the 1 button in the browser. Your total should increase by 1.
