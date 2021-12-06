@@ -20,7 +20,7 @@ function App() {
             <TotalDisplay value={0}/>
             <div className="row details">
               <span id="operation"><b>Operation:</b> {state.operation}</span>
-              <span id="memory"><b>Memory:</b> 0</span>
+              <span id="memory"><b>Memory:</b> {state.memory}</span>
             </div>
             
             <div className="row">
