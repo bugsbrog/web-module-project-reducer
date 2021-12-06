@@ -86,7 +86,7 @@ export const initialState = {
 * [X] Within `./actions/index,` add in an action creator and action string constant to for `CLEAR_DISPLAY`. Make sure to import that constant into your reducer file.
 * [X] Within `App.js,` import in your clearDisplay action creator.
 * [X] Create and connect an event handler to the "CE" button that dispatches your clearDisplay action creator.
-* [ ] **Test** that your clearDisplay button works as expected.
+* [X] **Test** that your clearDisplay button works as expected.
 
 #### Add in memory functions from scratch.
 > *Congratulations! You have gone through the entire process for adding an action to your app! Now, see if you can follow the same process (reducer case => action creator => UI connection) for the following app features. IN EACH CASE, ALWAYS TEST THAT YOUR FEATURE WORKS BEFORE PROCEEDING FORWARD.*
