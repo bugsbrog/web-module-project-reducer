@@ -11,6 +11,10 @@ function App() {
   const handleApplyNum = (num) => {
     dispatch(applyNumber(num))
   }
+
+  const handleChangeOp = (operator) => {
+    dispatch(changeOperation(operator))
+  }
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
